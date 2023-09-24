@@ -6,13 +6,21 @@
     <h1 class="nombre fadeInFX">Delgado Lucio Rodrigo</h1>
 
     <div class="mostrar">
-        
-        <span  *ngIf="s_Ubi">
-            Reconquista, Santa Fe - Argentina
+
+        <span *ngIf="s_Ubi">
+            <a class="links textWhite" href="https://www.google.com/maps/@-29.1578817,-59.6434847,3a,63.8y,4.77h,84.15t/data=!3m7!1e1!3m5!1sBaolRpMlpCh7BpZX8qVDqQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DBaolRpMlpCh7BpZX8qVDqQ%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D38.02624%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656?entry=ttu" target="_blank">
+                <span class="textWhite">Reconquista, Santa Fe - Argentina</span>
+            </a>
+            
+            
+
         </span>
 
         <span *ngIf="s_Cels">
-            +54 9 3482 62-2020
+            <a class="links textWhite" href="https://api.whatsapp.com/send/?phone=5493482622020" target="_blank">
+                <img class="imgInfo" src="../../../assets/img/wsp.png" alt="Logo Whatsapp">
+                <span class="textWhite">+54 9 3482 62-2020</span>
+            </a>
         </span>
 
         <span *ngIf="s_tel">
@@ -22,7 +30,7 @@
         <span *ngIf="s_email">
             <a class="links textWhite" href="mailto:delgadoluciorodrigogmail.com" target="_blank">
                 <span class="textWhite">DelgadoLucioRodrigo@gmail.com</span>
-            </a>            
+            </a>
         </span>
 
         <span *ngIf="s_LinkedIn">
@@ -33,7 +41,7 @@
         </span>
 
         <span *ngIf="s_Github">
-            <a class="links" href="https://www.linkedin.com/in/delgadoluciorodrigo/" target="_blank">
+            <a class="links" href="https://github.com/LucioRode" target="_blank">
                 <img class="imgInfo" src="../../../assets/img/Git.png" alt="Logo Github">
                 <img class="imgInfo" src="../../../assets/img/GitHub-Logo.png" alt="Logo Github">
                 <span class="textWhite">/LucioRode</span>
@@ -48,7 +56,7 @@
             </a>
         </span>
 
-        
+
 
     </div>
 
