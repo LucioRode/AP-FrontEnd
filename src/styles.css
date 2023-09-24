@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Oxygen:wght@300&family=Russo+One&display=swap');
+
+body {
+    font-family: 'Lato', Impact, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(220, 220, 220);
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.textWhite{
+    color: white;
+}
+
+.fadeInFX{
+    animation: fadeIn 1s;
+}
+
+.borderojo{
+    border: 1px solid red;
+}
+
+.eArriba{
+    margin-top: 80px;
+}
+
+.eAbajo{
+    margin-bottom: 80px;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*      Inicio Banner Encabezado tipeo       */
+
+.banner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.fotoBanner {
+    z-index: -10;
+}
+
+.tipeo {
+    position: absolute;
+    width: 35ch;
+    margin-left: 30px;
+    animation: tipeo 4s steps(35), fx .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    top: 30px;
+    color: white;
+    z-index: 10;
+}
+
+.nombre {
+    position: absolute;
+    margin-left: 30px;
+    opacity: 0%;
+    animation: fadeIn 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    font-family: 'Lato';
+    font-size: 3em;
+    top: 70px;
+    color: white;
+    z-index: 11;
+}
+
+.botones{
+    width: 40%;
+    position: relative;
+    bottom: 80px;
+    left: 80px;
+}
+
+@keyframes tipeo {
+    from {
+        width: 0
+    }
+}
+
+@keyframes fx {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.iconMenu{
+    width: auto;
+    max-height: 50px;
+    margin: 10px;
+}
+
+.over :hover{
+    transform: scale(1.2) translate(0px, -10px);
+    filter: invert(100%);
+}
+
+/*      Fin Banner Encabezado tipeo       */
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*      Inicio Navbar       */
+
+.liston {height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navBtn{
+            /* Arriba | Derecha | Abajo | Izquierda */
+    padding: 5px 20px 3px 20px;
+}
+
+/*      Inicio Navbar       */
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*      Inicio Estudios Encabezado tipeo       */
+
+.escuela{
+    color: black;
+}
+
+.carrera{
+    color: rgb(68, 68, 68);
+    font-family: 'Lato';
+}
+
+.fecha{
+    color: rgb(114, 114, 114);
+    margin-left: 5px;
+}
+
+/*      Fin Estudios Encabezado tipeo       */
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*      Inicio Estudios Encabezado tipeo       */
+
+.idiomas{
+    max-width: 250px;
+}
+
+/*      Fin Estudios Encabezado tipeo       */
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*      Inicio Desarrollos       */
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+        );
+        gap: 16px;
+}
+
+.tarjeta{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+.direccionweb{
+    margin-top: 20px;
+}
+
+/*      Fin Desarrollos       */
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*      Inicio Footer       */
+
+footer {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px 25px 0% 0%;
+    color: white;
+}
+
+.dlr {
+    width: auto;
+    max-height: 20px;
+    margin-left: 5px;
+}
+
+.dlcv{
+    margin-top: 10px;
+}
+
+.whatsapp{
+    float: right;
+}
+
+/*      Fin Footer       */
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*      @Media para Celulares       */
+@media screen and (max-width: 800px) {
+    .tipeo {
+        margin-left: 30px;
+        font-size: 1.5em;
+        top: 20px;
+    }
+
+    .cajaBotones {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px 20px 0% 0%;
+    }
+
+}
