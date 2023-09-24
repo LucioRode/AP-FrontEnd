@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Lato', Impact, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(220, 220, 220);
+    background-color: #e9e9e9;
 }
 
 li {
@@ -56,7 +56,7 @@ h2{
     border-right: 3px solid;
     font-family: monospace;
     font-size: 2em;
-    top: 30px;
+    top: 40px;
     color: white;
     z-index: 10;
 }
@@ -70,9 +70,14 @@ h2{
     animation-fill-mode: forwards;
     font-family: 'Lato';
     font-size: 3em;
-    top: 70px;
+    top: 80px;
     color: white;
     z-index: 11;
+}
+
+.imgInfo{
+    max-height: 50px;
+    margin-right: 10px;
 }
 
 .botones{
@@ -104,6 +109,15 @@ h2{
     }
 }
 
+.mostrar{
+    max-width: 60%;
+    position: absolute;
+    color: white;
+    font-size: 2.5rem;
+    top: 200px;
+    left: 100px;
+}
+
 .iconMenu{
     width: auto;
     max-height: 50px;
@@ -112,7 +126,7 @@ h2{
 
 .over :hover{
     transform: scale(1.2) translate(0px, -10px);
-    filter: invert(100%);
+    filter: invert(80%);
 }
 
 /*      Fin Banner Encabezado tipeo       */
@@ -124,8 +138,13 @@ h2{
 }
 
 .navBtn{
-            /* Arriba | Derecha | Abajo | Izquierda */
     padding: 5px 20px 3px 20px;
+}
+
+.btnCerrar{
+    font-size: 1rem;
+    color: red;
+    margin-left: 50px;
 }
 
 /*      Inicio Navbar       */
